@@ -20,5 +20,5 @@ examples:
 	"set $RAX=0xDEADBEEF"	sets value of RAX to DEADBEEF
 
 
-	
+	Nice gdb init philez for ya by few cool asf peeps: https://gist.github.com/CocoaBeans/1879270
 
