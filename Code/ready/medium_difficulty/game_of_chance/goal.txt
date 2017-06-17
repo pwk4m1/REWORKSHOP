@@ -1,0 +1,4 @@
+your goal with this lil binary is
+to figure out correct pseudo-randomly generated
+numbers, and to submit them for binary.
+

@@ -1,0 +1,2 @@
+there is a hardcoded string inside binary.
+read it somehow.

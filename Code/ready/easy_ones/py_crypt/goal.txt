@@ -1,0 +1,7 @@
+Your goal is to figure out a way to decrypt the secret from
+flag file.
+we encrypted it with crypt0rz script, but apparently we broke it somehow :(
+./crypto is not working anymore T-T
+
+
+

@@ -1,0 +1,9 @@
+here is a malware sample which was found
+on one of our machines, can you help us to track the attacker
+who sent this to us?
+we'd need the IP address of the attacker.
+
+NOTE: as this is just a little experiment, this malware
+does not do anything "bad" to your machine, so you can
+run it without a need to setup a virtual machine / sandbox
+for it.

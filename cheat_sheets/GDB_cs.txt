@@ -1,0 +1,24 @@
+
+commands of interest:
+	disass <function>:		disassembles binary at function to asm.
+	x/<size><type> <addr> : 	reads <size> amount of <type> data from <addr>
+	break <addr/fun>:		sets a breakpoint to <address> or <funciton> given
+	continue:			continues program execution afterbreakpoint
+	run:				starts the program
+	set <address/register>=<value>:	sets value of address or register to <value>
+	delete <number>:		removes breakpoint number <number>
+
+examples:
+	"disass main" 	disassembles the program main function.
+	"x/15i $pc"	shows 15 next instructions from current "line".
+	"x/64s $RSP"	shows 64 strings from stack.
+
+	"break main"	stops code exection to main function.
+	"continue"	continues the exec again.
+
+	"set *0x0405ff=0x414141"	sets memory at address 0x0405ff to be AAA 
+	"set $RAX=0xDEADBEEF"	sets value of RAX to DEADBEEF
+
+
+	
+

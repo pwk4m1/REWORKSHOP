@@ -1,0 +1,2 @@
+This binary stores a little secret to ram,
+read it :)

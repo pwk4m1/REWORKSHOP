@@ -1,0 +1,28 @@
+
+<instruction>	<args>	; <comment>
+
+mov	x, y		; moves Y to X
+mov	x, [y]		; moves from address y to x
+
+add	x, y		; adds y to x
+inc	x		; increases x by one
+sub	x, y		; substracts y from x
+
+cmp	x, y		; compares x and y
+je	<addr>		; if equal, jump to address
+jl	<addr>		; if less, jump to address
+jg	<addr>		; if greater, jump to address
+... ; plenty of others, either  RTFM, google, or GTFO kek
+
+jmp	<addr>		; jump to address
+int	<value>		; interrupt. ( eg . int 0x80 --> interrupt/call the kernel>
+
+push	<value>		; push value to stack
+pop	<value>		; retrieve data from stack to <value>
+
+call	<function>	; call a function.
+
+; Rest, you can read from the Holy book of x86, or from intel/amd
+; programmers manual.
+ 
+
