@@ -8,11 +8,13 @@
 #include <sys/ptrace.h>
 
 void init(void) __attribute__((constructor));
+int c;
 
 void init(void)
 {
     if (ptrace(PTRACE_TRACEME, 0,0,0))
         exit(-1);
+    c = 1;
 }
 
 void usage(char *pname)
@@ -26,26 +28,17 @@ int main(int argc, char **argv)
         usage(argv[0]);
         return 0;
     } else {
-        if (!strcmp(argv[1],"H4CK_TH3_PL4N3T")) {
-            goto fail;
+        if (!strcmp(argv[1],"H4CK_TH3_PL4N3T") && !c) {
             goto win;
 win:
-            if (1 == 2)
-                printf("SECRET{");
-            if (2 == 3)
-                printf("D0n");
-            if (6 == 2)
-                printf("TMESS");
-            if (1 == 3)
-                printf("TH3C0DEX}\n");
+            printf("SECRET{");
+            printf("D0n");
+            printf("TMESS");
+            printf("TH3C0DEX}\n");
             return 0;
-fail:
-            exit(-1);
         }
     }
 }
-
-
 
 
 

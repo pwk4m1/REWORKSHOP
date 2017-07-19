@@ -218,7 +218,6 @@ void gdb_check()
         if (WIFEXITED(status)) {
             res = WEXITSTATUS(status) & 0xff00;
         } else {
-            printf("SIGFAIL\n");
             res = 1;
         }
     }
@@ -255,15 +254,12 @@ int main(int argc, char **argv)
 void fini()
 {
     int i;
-    goto fail;
     gdb_check();
     printf("secret{");
     for (i=0; i < strlen(ckey); i++)
         printf("%c", ckey[i] + 10);
-    printf("{\n");
+    printf("}\n");
 
     free(ckey);
-fail:
-    return;
 }
 
